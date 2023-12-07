@@ -423,8 +423,8 @@ header .container ul a:hover {
 .sec3 p {
     font-size: 1.2em;
     color: #FFFFFF;
-    max-width: 600px;
-    word-break: break-word;
+    max-width: 550px;
+    line-break: anywhere;
     margin-bottom: 50px;
 }
 
