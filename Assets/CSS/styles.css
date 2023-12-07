@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
     text-decoration: none;
     font-family: "poppins";
     scroll-behavior: smooth;
@@ -54,6 +55,13 @@ header .container ul a {
     color: #66aefc;
 }
 
+header .container ul a:hover {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0 30px;
+    color: #31489f;
+}
+
 @media (max-width: 1500px) {
     header {
         position: relative;
@@ -70,17 +78,17 @@ header .container ul a {
 }
 
 @media (max-width: 750px) {
-   header .logo {
-    display: none;
-   }
+    header .logo {
+        display: none;
+    }
 
-   header .container {
-    justify-content: center;
-   }
+    header .container {
+        justify-content: center;
+    }
 
-   header .container ul a {
-    margin: 0 10px;
-}
+    header .container ul a {
+        margin: 0 10px;
+    }
 }
 
 /*** Section 1 ***/
@@ -142,7 +150,8 @@ header .container ul a {
     overflow: hidden;
 }
 
-.sec1 button:hover::before {
+.sec1 button:hover::before,
+.sec3 button:hover::before {
     transform: translate(0%);
 }
 
@@ -151,13 +160,15 @@ header .container ul a {
     width: 280px;
 }
 
-.sec1 button i {
+.sec1 button i,
+.sec3 button i {
     transform: scale(0);
     margin: -10px;
     transition: 0.3s;
 }
 
-.sec1 button:hover i {
+.sec1 button:hover i,
+.sec3 button:hover i {
     transform: scale(1);
     margin-left: 10px;
 }
@@ -223,8 +234,10 @@ header .container ul a {
 /*** Section 2 ***/
 
 .sec2 {
-  background-color: #232323;
-  padding: 120px 0;
+    position: relative;
+    z-index: -1;
+    background-color: #232323;
+    padding: 120px 0;
 }
 
 .sec2 .container {
@@ -290,6 +303,7 @@ header .container ul a {
 }
 
 .sec2 p {
+    font-size: 1.2em;
     max-width: 600px;
     line-break: anywhere;
 }
@@ -309,7 +323,7 @@ header .container ul a {
 
     .content-bottom .right {
         max-width: 700px;
-    } 
+    }
 }
 
 
@@ -354,7 +368,7 @@ header .container ul a {
         align-items: center;
         margin-bottom: 50px;
     }
-    
+
     .sec2 .separator {
         border-radius: 50px;
     }
@@ -366,5 +380,127 @@ header .container ul a {
 
     .sec2 .point {
         margin-right: 0;
+    }
+}
+
+/*** Section 3 ***/
+
+.sec3 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 1080px;
+    background-image: url(../svg/1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(5px 5px 10px #000);
+}
+
+.sec3 .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sec3 h3 {
+    color: #FFFFFF;
+    font-size: 4em;
+}
+
+.sec3 .separator {
+    width: 100px;
+    height: 7px;
+    background-color: #66adfc;
+    border-radius: 0 50px 50px 0;
+    margin: 50px 0;
+}
+
+.sec3 p {
+    font-size: 1.2em;
+    color: #FFFFFF;
+    max-width: 600px;
+    word-break: break-word;
+    margin-bottom: 50px;
+}
+
+.sec3 button::before {
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 280px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    top: -2px;
+    left: -2px;
+    transform: translate(-100%);
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.sec3 button {
+    position: relative;
+    height: 60px;
+    width: 220px;
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
+    border-radius: 50px;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    transition: 0.3s;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.sec3 button:hover {
+    color: #31489f;
+    width: 280px;
+}
+
+.sec3 .right img {
+    width: 100%;
+}
+
+@media (max-width: 1500px) {
+    .sec3 .right {
+        max-width: 450px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1050px) {
+    .sec3 .container {
+        flex-direction: column;
+    }
+
+    .sec3 .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sec3 h3 {
+        font-size: 3em;
+    }
+
+    .sec3 .separator {
+        border-radius: 50px;
+    }
+
+    .sec3 p {
+       margin: 0 20px;
+    }
+
+    .sec3 button {
+        margin: 50px 0;
+     }
+
+    .sec3 .right img {
+        width: 80%;
     }
 }
