@@ -210,7 +210,14 @@ header .container ul a {
 
 .sec2 {
   background-color: #232323; 
-  height: 100vh;
+}
+
+.sec2 .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sec2 .title {
@@ -219,6 +226,9 @@ header .container ul a {
     text-align: center;
     color: #FFFFFF;
     font-size: 3em;
+    margin-bottom: 100px;
+
+
 }
 
 .sec2 .title::before {
@@ -233,3 +243,50 @@ header .container ul a {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.sec2 .content {
+    color: #FFFFFF;
+}
+
+.sec2 h3 {
+    font-size: 2.5em;
+}
+
+.sec2 .titre {
+    display: flex;
+    align-items: center;
+}
+
+.sec2 .point {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background-color: #31489f;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.sec2 .separator {
+    width: 75px;
+    height: 7px;
+    background-color: #66adfc;
+    border-radius: 0 50px 50px 0;
+    margin: 25px 0;
+}
+
+.sec2 p {
+    max-width: 600px;
+    line-break: anywhere;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* .content-top, .content-bottom {
+    
+} */
