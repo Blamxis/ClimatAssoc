@@ -208,3 +208,28 @@ header .container ul a {
 
 /*** Section 2 ***/
 
+.sec2 {
+  background-color: #232323; 
+  height: 100vh;
+}
+
+.sec2 .title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 3em;
+}
+
+.sec2 .title::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #66aefc;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 35%, 64% 100%, 48% 35%, 31% 100%, 16% 35%, 0 80%);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
