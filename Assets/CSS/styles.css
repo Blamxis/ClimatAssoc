@@ -380,12 +380,13 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .sec3 h3 {
     color: #FFFFFF;
-    font-size: 4em;
+    max-width: 600px;
+    font-size: 3.5em;
 }
 
 .sec3 .separator {
@@ -399,7 +400,7 @@ body {
 .sec3 p {
     font-size: 1.2em;
     color: #FFFFFF;
-    max-width: 550px;
+    max-width: 500px;
     line-break: anywhere;
     margin-bottom: 50px;
 }
@@ -456,6 +457,7 @@ body {
     .sec3 .left {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         text-align: center;
     }
