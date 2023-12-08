@@ -26,69 +26,31 @@ body {
 
 /*** Header ***/
 
-header {
-    height: 120px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-}
-
-header .container {
-    width: 1500px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-header .container ul {
-    display: flex;
-}
-
-header .container ul a {
-    font-size: 1.2em;
-    font-weight: 500;
-    margin: 0 30px;
-    color: #66aefc;
-}
-
-header .container ul a:hover {
-    font-size: 1.2em;
-    font-weight: 500;
-    margin: 0 30px;
+.offcanvas-title {
     color: #31489f;
+    font-size: 2em;
 }
 
-@media (max-width: 1500px) {
-    header {
-        position: relative;
-        background-color: #66aefc;
-    }
-
-    header .container {
-        width: 100%;
-    }
-
-    header .container ul a {
-        color: #FFFFFF;
-    }
+.offcanvas-body {
+    background-color: #66adfc;
+    color: white;
+    text-align: center;
 }
 
-@media (max-width: 750px) {
-    header .logo {
-        display: none;
-    }
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 1.5em;
+    border-bottom: 2px solid rgba(255,255,255,.10);
+    text-align: left;
+}
 
-    header .container {
-        justify-content: center;
-    }
+.navbar-nav .last-item {
+    margin-bottom: 50px; /* Ajoutez l'espace entre le dernier lien et le logo */
+}
 
-    header .container ul a {
-        margin: 0 10px;
-    }
+.navbar-brand img {
+    max-width: 100px;
+    height: 100px;
 }
 
 /*** Section 1 ***/
@@ -200,6 +162,10 @@ header .container ul a:hover {
         font-size: 6em;
         margin-bottom: 60px;
     }
+
+    .sec1 button {
+        z-index: 0;
+    }
 }
 
 @media (max-width: 700px) {
@@ -215,6 +181,14 @@ header .container ul a:hover {
 @media (max-width: 700px) {
     .sec1 h1 {
         font-size: 3em;
+    }
+
+    .sec1 button {
+        z-index: 0;
+    }
+
+    .h2, h2 {
+        font-size: 4rem;
     }
 }
 
@@ -255,8 +229,6 @@ header .container ul a:hover {
     color: #FFFFFF;
     font-size: 3em;
     margin-bottom: 100px;
-
-
 }
 
 .sec2 .title::before {
@@ -323,6 +295,10 @@ header .container ul a:hover {
 
     .content-bottom .right {
         max-width: 700px;
+    }
+
+    .h2, h2 {
+        font-size: 6rem;
     }
 }
 
