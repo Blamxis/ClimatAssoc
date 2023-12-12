@@ -1,0 +1,57 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/*** Header ***/
+
+.offcanvas-title {
+    color: #31489f;
+    font-size: 2em;
+}
+
+.offcanvas-body {
+    background-color: #66adfc;
+    color: white;
+    text-align: center;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 1.5em;
+    border-bottom: 2px solid rgba(255,255,255,.10);
+    text-align: left;
+}
+
+.navbar-nav .last-item {
+    margin-bottom: 50px; /* Ajoutez l'espace entre le dernier lien et le logo */
+}
+
+.navbar-brand img {
+    max-width: 100px;
+    height: 100px;
+}
+
+/*** Articles ***/
+
+.legal-section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.legal-section h1 {
+    color: #333;
+}
+
+.legal-section article h2 {
+    color: #31489f;
+}
+
+.legal-section p {
+    line-break: anywhere;
+    margin-bottom: 10px;
+}
