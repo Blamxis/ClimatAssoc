@@ -84,7 +84,7 @@ body {
     margin-bottom: 70px;
 }
 
-.sec1 button::before {
+.sec1 .btn::before {
     content: "";
     position: absolute;
     height: 70px;
@@ -98,7 +98,7 @@ body {
     z-index: -1;
 }
 
-.sec1 button {
+.sec1 .btn {
     position: relative;
     height: 70px;
     width: 250px;
@@ -112,25 +112,25 @@ body {
     overflow: hidden;
 }
 
-.sec1 button:hover::before,
-.sec3 button:hover::before {
+.sec1 .btn:hover::before,
+.sec3 .btn:hover::before {
     transform: translate(0%);
 }
 
-.sec1 button:hover {
+.sec1 .btn:hover {
     color: #FFFFFF;
     width: 280px;
 }
 
-.sec1 button i,
-.sec3 button i {
+.sec1 .btn i,
+.sec3 .btn i {
     transform: scale(0);
     margin: -10px;
     transition: 0.3s;
 }
 
-.sec1 button:hover i,
-.sec3 button:hover i {
+.sec1 .btn:hover i,
+.sec3 .btn:hover i {
     transform: scale(1);
     margin-left: 10px;
 }
@@ -163,7 +163,7 @@ body {
         margin-bottom: 60px;
     }
 
-    .sec1 button {
+    .sec1 .btn {
         z-index: 0;
     }
 }
@@ -183,7 +183,7 @@ body {
         font-size: 3em;
     }
 
-    .sec1 button {
+    .sec1 .btn {
         z-index: 0;
     }
 
@@ -405,7 +405,7 @@ body {
     margin-bottom: 50px;
 }
 
-.sec3 button::before {
+.sec3 .btn::before {
     content: "";
     position: absolute;
     height: 70px;
@@ -419,7 +419,7 @@ body {
     z-index: -1;
 }
 
-.sec3 button {
+.sec3 .btn {
     position: relative;
     height: 60px;
     width: 220px;
@@ -433,7 +433,7 @@ body {
     overflow: hidden;
 }
 
-.sec3 button:hover {
+.sec3 .btn:hover {
     color: #31489f;
     width: 280px;
 }
@@ -474,7 +474,7 @@ body {
        margin: 0 20px;
     }
 
-    .sec3 button {
+    .sec3 .btn {
         margin: 50px 0;
      }
 
