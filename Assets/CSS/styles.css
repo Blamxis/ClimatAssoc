@@ -20,7 +20,7 @@ button {
 
 body {
     overflow-x: hidden;
-    max-width: 1920px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -51,6 +51,19 @@ body {
 .navbar-brand img {
     max-width: 100px;
     height: 100px;
+}
+
+@media (max-width: 768px) {
+    .custom-offcanvas {
+        width: 75% !important;
+    }
+
+    .navbar-toggler {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        opacity: 0.5;
+    }
 }
 
 /*** Section 1 ***/
@@ -184,6 +197,7 @@ body {
     }
 
     .sec1 .btn {
+        align-self: center;
         z-index: 0;
     }
 
@@ -192,10 +206,25 @@ body {
     }
 }
 
+@media (max-width: 350px) {
+    .sec1 h1 {
+        font-size: 2.5em;
+    }
+
+    .h2, h2 {
+        font-size: 3rem;
+    }
+
+    .sec1 .btn {
+        text-align: center;
+        height: 60px;
+    }
+}
+
 /*** Transition ***/
 
 .transition {
-    width: 105%;
+    width: 100%;
     position: absolute;
     transform: translateY(-30%);
 }
@@ -215,7 +244,7 @@ body {
 }
 
 .sec2 .container {
-    width: 1500px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -277,7 +306,7 @@ body {
 .sec2 p {
     font-size: 1.2em;
     max-width: 600px;
-    line-break: anywhere;
+    word-break: break-word;
 }
 
 .content {
@@ -401,7 +430,7 @@ body {
     font-size: 1.2em;
     color: #FFFFFF;
     max-width: 500px;
-    line-break: anywhere;
+    word-break: break-word;
     margin-bottom: 50px;
 }
 
@@ -463,7 +492,7 @@ body {
     }
 
     .sec3 h3 {
-        font-size: 3em;
+        font-size: 2.3em;
     }
 
     .sec3 .separator {
@@ -471,7 +500,7 @@ body {
     }
 
     .sec3 p {
-       margin: 0 20px;
+       margin: 0 10px;
     }
 
     .sec3 .btn {
@@ -479,7 +508,7 @@ body {
      }
 
     .sec3 .right img {
-        width: 80%;
+        width: 70%;
     }
 }
 
